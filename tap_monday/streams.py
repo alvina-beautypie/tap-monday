@@ -109,6 +109,9 @@ class BoardsStream(MondayStream):
                             }
                         }
                     }
+                    rateLimit {
+                      cost
+                    }
                 }
         """
 
@@ -193,6 +196,9 @@ class BoardViewsStream(MondayStream):
                         settings_str
                     }
                 }
+                rateLimit {
+                  cost
+                }
             }
         """
 
@@ -235,6 +241,9 @@ class GroupsStream(MondayStream):
                         id
                         color
                     }
+                }
+                rateLimit {
+                  cost
                 }
             }
         """
@@ -287,6 +296,9 @@ class ColumnsStream(MondayStream):
                         type
                         width
                     }
+                }
+                rateLimit {
+                  cost
                 }
             }
         """
