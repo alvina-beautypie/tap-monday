@@ -32,6 +32,9 @@ class WorkspacesStream(MondayStream):
                 }
               }
             }
+            rateLimit {
+              cost
+            }
         """
 
     def parse_response(self, response: requests.Response) -> Iterable[dict]:
@@ -283,7 +286,7 @@ class ColumnsStream(MondayStream):
                         title
                         type
                         width
-                    }    
+                    }
                 }
             }
         """

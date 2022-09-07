@@ -107,4 +107,4 @@ class MondayStream(GraphQLStream):
             # Cycle until get_next_page_token() no longer returns a value
             finished = not next_page_token
 
-        self.log_sync_costs()
+        #self.log_sync_costs()
